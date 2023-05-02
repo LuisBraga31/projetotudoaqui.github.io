@@ -1,0 +1,9 @@
+main {
+    height: calc(100vh - 50px);
+
+    background-image: url("../img/plano-estudos.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
