@@ -31,12 +31,65 @@
     <main id="main-index">
 
         <section id="section-forms">
+            
+            <form type="submit" class="formulario">
+                
+                <div class="form-header">
+                  <p> 📚 Cadastro ao Fórum 📚 </p>
+                </div>
+          
+                <label>
+                  Nome:
+                  <input id="firstName" type="text" required minlength="4" maxlength="20">
+                  <small>Preencha o nome corretamente</small>
+                </label>
 
+                <label>
+                  Email:
+                  <input id="email" type="email" required minlength="6">
+                  <small>Preencha o email corretamente</small>
+                </label>
 
+                <div class="box-select">
+                    <p> Sexo: </p>
+                    <div class="select-item">
+                        <input type="radio" id="m" value="m" name="sexo" checked>
+                        <label for="m">Masculino</label>
+                    </div>
+                    <div class="select-item">
+                        <input type="radio" id="f" value="f" name="sexo">
+                        <label for="f">Feminino</label>
+                    </div>
+                    <div class="select-item">
+                        <input type="radio" id="o" value="o" name="sexo">
+                        <label for="o">Outro</label>
+                    </div>
+                </div>
 
+                <label>
+                    Nascimento:
+                    <input id="date" type="date" required minlength="8">
+                    <small> Criar senha com 8 caracteres </small>
+                </label>
 
+                <label>
+                  Senha:
+                  <input id="password" type="password" required minlength="8">
+                  <small> Criar senha com 8 caracteres </small>
+                </label>
 
-
+                <label>
+                  Repetir senha:
+                  <input id="passwordRepeat" type="password" required>
+                  <small>Senhas não conferem</small>
+                </label>
+                
+                <div class="form-button">
+                    <button id="buttonRegister" > Criar conta </button>
+                </div>
+          
+            </form>
+            
         </section>
             
     </main>
