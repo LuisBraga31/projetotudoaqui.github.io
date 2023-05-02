@@ -14,6 +14,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html,body {
+    overflow-x: hidden !important;
+}
+
+
 button {
     cursor: pointer;
 }
@@ -57,7 +62,10 @@ button {
 }
 
 /* FOOTER */
-
+footer {
+    position: absolute;
+    width: 100%;
+}
 .footer-tag {
     width: 100%;
     padding: 1em;

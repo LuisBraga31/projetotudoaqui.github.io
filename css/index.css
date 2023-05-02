@@ -1,3 +1,7 @@
+main {
+    height: calc(250vh - 50px);
+}
+
 /* FORUM */
 
 /* Efeito Parallax: Parallax é o nome dado ao efeito de 
