@@ -6,6 +6,14 @@
     color: white;
 }
 
+/*
+ Scroll Behavior: server para deixar a transição de links internos mais suaves
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     cursor: pointer;
 }
@@ -13,10 +21,13 @@ button {
 /* HEADER */
 
 #header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1.4em;
     background-color: black;
 }
 
