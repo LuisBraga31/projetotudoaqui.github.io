@@ -12,12 +12,15 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    min-height: 100%;
 }
 
-html,body {
-    overflow-x: hidden !important;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
-
 
 button {
     cursor: pointer;
@@ -63,9 +66,10 @@ button {
 
 /* FOOTER */
 footer {
-    position: absolute;
+    margin-top: auto;
     width: 100%;
 }
+
 .footer-tag {
     width: 100%;
     padding: 1em;

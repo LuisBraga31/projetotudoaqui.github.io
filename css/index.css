@@ -1,5 +1,5 @@
 main {
-    height: calc(250vh - 50px);
+    min-height: 200vh;
 }
 
 /* FORUM */
@@ -9,7 +9,7 @@ diferentes objetos parecerem estar em diferentes posições
 ou direções quando observados em diferentes posições.*/
 #section-forum {
 
-    padding: 15em 20em;
+    padding: 10em 20em;
     background-image: url("../img/plano-estudos.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
