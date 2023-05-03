@@ -111,7 +111,7 @@ input:focus {
 
 .form-button button{
     padding: .3em 2em;
-    background-color: rgb(148, 255, 129);
+    background-color: whitesmoke;
     color: black;
     margin-top: 1em;
     font-weight: bold;
@@ -122,6 +122,12 @@ input:focus {
 }
 
 .form-np {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form-np p {
     font-size: 14px;
     padding-top: 10px;
     color: black;

@@ -1,19 +1,18 @@
-main {
-    min-height: 200vh;
-}
-
-/* FORUM */
-
 /* Efeito Parallax: Parallax é o nome dado ao efeito de 
 diferentes objetos parecerem estar em diferentes posições 
 ou direções quando observados em diferentes posições.*/
-#section-forum {
 
-    padding: 10em 20em;
+main {
+    min-height: 200vh;
     background-image: url("../img/plano-estudos.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* FORUM */
+#section-forum {
+    padding: 10em 20em;
 }
 
 .forum-text {
@@ -42,7 +41,7 @@ ou direções quando observados em diferentes posições.*/
 /* RECURSOS */
 
 #section-recursos {
-
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +84,7 @@ ou direções quando observados em diferentes posições.*/
 /* PROJETOS */
 
 #section-projetos {
-    background-color: lightgray;  
+    background-color: transparent;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +124,7 @@ ou direções quando observados em diferentes posições.*/
 /* REDES */
 
 #section-redes {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
