@@ -7,6 +7,8 @@ const cadastroNascimentoRef = document.querySelector('#cadastro-nascimento');
 const cadastroPasswordRef = document.querySelector('#cadastro-password');
 const cadastroRepeatPasswordRef = document.querySelector('#cadastro-passwordRepeat');
 
+const errorNascimentoRef = document.querySelector('.errorNascimento');
+
 //Funções
 
 function validateLogin(input) {
@@ -34,6 +36,27 @@ function checkPasswords() {
 
 }
 
+function validateDate() {
+    const elementFatherDateRef = cadastroNascimentoRef.parentElement; 
+
+    var data = new Date(cadastroNascimentoRef.value).getF;
+    var diaAtual = new Date();
+    var dateUser = data.getFullYear();
+    var dateNow = diaAtual.getFullYear();
+    var idade = dateNow - dateUser;
+
+    if(idade >= 119) {
+        elementFatherDateRef.classList.add('error'); 
+        errorNascimentoRef.innerText = 'Segundo Guinness, a pessoa mais velha tem 118 anos'; 
+    } else if(idade < 14) {
+        elementFatherDateRef.classList.add('error');
+        errorNascimentoRef.innerText = 'Menores de 14 anos não podem ser cadastrar'; 
+    } else {
+        elementFatherDateRef.classList.remove('error'); 
+    }
+
+}
+
 //Eventos
 cadastroNomeRef.addEventListener('keyup', () => validateLogin(cadastroNomeRef));
 cadastroEmailRef.addEventListener('keyup', () => validateLogin(cadastroEmailRef));
@@ -43,3 +66,5 @@ cadastroRepeatPasswordRef.addEventListener('keyup', () => validateLogin(cadastro
 
 cadastroPasswordRef.addEventListener('keyup', () => checkPasswords());
 cadastroRepeatPasswordRef.addEventListener('keyup', () => checkPasswords());
+
+cadastroNascimentoRef.addEventListener('keyup', () => validateDate());
