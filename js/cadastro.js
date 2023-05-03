@@ -39,7 +39,7 @@ function checkPasswords() {
 function validateDate() {
     const elementFatherDateRef = cadastroNascimentoRef.parentElement; 
 
-    var data = new Date(cadastroNascimentoRef.value).getF;
+    var data = new Date(cadastroNascimentoRef.value);
     var diaAtual = new Date();
     var dateUser = data.getFullYear();
     var dateNow = diaAtual.getFullYear();
