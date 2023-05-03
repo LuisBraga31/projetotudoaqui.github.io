@@ -28,18 +28,35 @@
 
     </header>
 
-    <main id="main-index">
+    <main id="main-login">
 
-        <section id="section-forms">
+        <section id="section-login">
 
-            <form action="">
+            <form type="submit" class="formulario">
+                
+                <div class="form-header">
+                  <p> 📚 Login ao Fórum 📚 </p>
+                </div>
 
+                <label>
+                  Email:
+                  <input id="email" type="email" required minlength="6">
+                  <small>Preencha o email corretamente</small>
+                </label>
 
+                <label>
+                  Senha:
+                  <input id="password" type="password" required minlength="8">
+                  <small> Criar senha com 8 caracteres </small>
+                </label>
 
+                <div class="form-button">
+                    <button id="buttonRegister" > Entrar </button>
+                </div>
+
+                <p class="form-np"> Não possui login ? Cadastre-se <a href="../pages/formulario.html"> aqui </a> </p>
+          
             </form>
-
-
-
 
         </section>
             

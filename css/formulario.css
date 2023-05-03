@@ -1,13 +1,25 @@
 main {
-    height: 130vh;
-
     background-image: url("../img/plano-estudos.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
+#main-cadastro {
+    height: 130vh;
+}
+
+#main-login {
+    height: 95vh;
+}
+
+#section-login {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 100px;
+    margin-top: 100px;
+}
 #section-forms {
     display: flex;
     justify-content: center;
@@ -107,6 +119,16 @@ input:focus {
     cursor: pointer; 
     border: 1px solid black;
     border-radius: 3.5px;
+}
+
+.form-np {
+    font-size: 14px;
+    padding-top: 10px;
+    color: black;
+}
+
+.form-np a {
+    color: blue;
 }
 
 form > label > small {
