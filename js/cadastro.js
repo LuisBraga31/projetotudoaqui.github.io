@@ -6,6 +6,7 @@ const cadastroEmailRef = document.querySelector('#cadastro-email');
 const cadastroNascimentoRef = document.querySelector('#cadastro-nascimento');
 const cadastroPasswordRef = document.querySelector('#cadastro-password');
 const cadastroRepeatPasswordRef = document.querySelector('#cadastro-passwordRepeat');
+const cadastroButtonRef = document.querySelector('#buttonRegister');
 
 const errorNascimentoRef = document.querySelector('.errorNascimento');
 
@@ -57,6 +58,12 @@ function validateDate() {
 
 }
 
+function createAccount() {
+
+    // Por enquanto apenas irá recaminhar para outra página.
+    window.location.href = '../pages/login.html';
+}
+
 //Eventos
 cadastroNomeRef.addEventListener('keyup', () => validateLogin(cadastroNomeRef));
 cadastroEmailRef.addEventListener('keyup', () => validateLogin(cadastroEmailRef));
@@ -68,3 +75,5 @@ cadastroPasswordRef.addEventListener('keyup', () => checkPasswords());
 cadastroRepeatPasswordRef.addEventListener('keyup', () => checkPasswords());
 
 cadastroNascimentoRef.addEventListener('keyup', () => validateDate());
+
+cadastroButtonRef.addEventListener('click', () => createAccount());
