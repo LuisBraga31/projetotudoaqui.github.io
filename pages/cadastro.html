@@ -41,13 +41,13 @@
           
                 <label>
                   Nome:
-                  <input id="firstName" type="text" required minlength="4" maxlength="20">
+                  <input id="cadastro-nome" type="text" required minlength="4" maxlength="40">
                   <small>Preencha o nome corretamente</small>
                 </label>
 
                 <label>
                   Email:
-                  <input id="email" type="email" required minlength="6">
+                  <input id="cadastro-email" type="email" required>
                   <small>Preencha o email corretamente</small>
                 </label>
 
@@ -69,20 +69,20 @@
 
                 <label>
                     Nascimento:
-                    <input id="date" type="date" required minlength="8">
-                    <small> Criar senha com 8 caracteres </small>
+                    <input id="cadastro-nascimento" type="date" required>
+                    <small> Preencha o nascimento corretamente </small>
                 </label>
 
                 <label>
                   Senha:
-                  <input id="password" type="password" required minlength="8">
-                  <small> Criar senha com 8 caracteres </small>
+                  <input id="cadastro-password" type="password" required minlength="8">
+                  <small> Preencha com no minimo 8 caracteres </small>
                 </label>
 
                 <label>
                   Repetir senha:
-                  <input id="passwordRepeat" type="password" required>
-                  <small>Senhas não conferem</small>
+                  <input id="cadastro-passwordRepeat" type="password" required minlength="8">
+                  <small> Senhas não conferem </small>
                 </label>
                 
                 <div class="form-button">
@@ -103,7 +103,7 @@
 
     </footer>
 
-
+    <script src="../js/cadastro.js" type="module"></script>
 
 
 </body>

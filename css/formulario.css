@@ -150,6 +150,13 @@ main {
 
 /* Parte feita juntamente com o Javascript */
 
-form > label > small {
+label > small {
     display: none;
+}
+
+label.error small {
+    display: block;
+    color: red;
+    font-size: 12px;
+    padding-top: 5px;
 }
