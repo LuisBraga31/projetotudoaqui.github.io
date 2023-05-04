@@ -16,12 +16,14 @@ function validarCep() {
             response => {
                 response.json().then(
                     data => {
-                        
-                        if (data.erro === undefined) {
+
+                        if(data.erro === undefined) {
                             preencherEndereco(data);
                         } else {
                             alert('Cep informado não existe');
                             cepRef.value = '';
+                            cidadeRef.innerText = '';
+                            bairroRef.innerText = '';
                         }
             
                     }
@@ -32,9 +34,9 @@ function validarCep() {
 
     } else {
 
-        cidadeRef.value = '';
-        bairroRef.value = '';
-
+        cidadeRef.innerText = '';
+        bairroRef.innerText = '';
+        
     }
 
 }
