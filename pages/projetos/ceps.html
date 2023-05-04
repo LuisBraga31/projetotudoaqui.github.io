@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/padrao.css">
+    <link rel="stylesheet" href="../../css/cep.css">
+    <title> Projetos | Api CEP </title>
+</head>
+<body>
+    
+    <header id="header">
+
+        <div class="header-logo">
+            <h1> Tudo Aqui! </h1>
+        </div>
+
+        <div class="header-nav">
+
+            <nav class="nav-itens">
+                <a href="../../index.html"> Home </a>
+                <a href="#"> Informações </a>
+                <a href="#"> API </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main id="main-cep">
+
+        <div class="cep-box">
+
+            <p> 🏙 API - Busque o CEP 🏙</p>
+
+            <div class="cep-row">
+                <label for="cep"> Informe seu CEP: </label>
+                <input type="text" id="cep" maxlength="8">
+            </div>
+        
+            <div class="cep-row">
+                <p class="row"> Cidade: </p>
+                <p class="cidade-result"> </p>
+            </div>
+        
+            <div class="cep-row">
+                <p class="row"> Bairro: </p>
+                <p class="bairro-result"> </p>
+            </div>
+            
+
+        </div>
+            
+    </main>
+
+    <footer id="footer">
+        
+        <div class="footer-tag">
+            <small> © 2023 - Desenvolvido por Luis Braga Dev </small>
+        </div>
+
+    </footer>
+
+    <script src="../../js/cep.js" type="module"></script>
+
+</body>
+</html>

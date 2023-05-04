@@ -1,0 +1,75 @@
+main {
+    min-height: 100vh;
+    background-image: url("../img/plano-estudos.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.cep-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: top;
+    margin-bottom: 250px;
+    padding: 50px;
+    width: 40%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.cep-box > p {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cep-row {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cep-row label {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.row {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cep-row input {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid black;
+}
+
+.cidade-result, .bairro-result {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
