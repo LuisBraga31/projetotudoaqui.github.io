@@ -81,3 +81,12 @@ main {
     color: black;
     font-size: 28px;
 }
+
+.html-box img {
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.git img {
+    width: 650px;
+}
