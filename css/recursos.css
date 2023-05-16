@@ -90,3 +90,35 @@ main {
 .git img {
     width: 650px;
 }
+
+/* Para tabelas */
+
+/* O border-collapse propriedade define se os limites de tabelas devem ser recolhidas em uma única borda*/
+.tabela_html {
+    border-collapse: collapse;
+    background-color: white;
+    
+}
+
+.tabela_headerHtml > tr > th {
+    background-color: orangered;
+    font-weight: bold !important;
+}
+
+table, th {
+    border: 1px solid black;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.tabela_body th {
+    height: 30px;
+    text-align: center;
+    padding: 5px 40px;
+}
+
+.tabela_body tr:hover {
+    background-color: #e4e4e4
+}

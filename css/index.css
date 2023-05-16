@@ -3,7 +3,7 @@ diferentes objetos parecerem estar em diferentes posições
 ou direções quando observados em diferentes posições.*/
 
 main {
-    min-height: 200vh;
+
     background-image: url("../img/plano-estudos.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
