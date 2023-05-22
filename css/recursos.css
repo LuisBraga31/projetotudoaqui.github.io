@@ -97,7 +97,7 @@ main {
 .tabela_html {
     border-collapse: collapse;
     background-color: white;
-    
+    margin-bottom: 10px;
 }
 
 .tabela_headerHtml > tr > th {
@@ -121,4 +121,17 @@ table, th {
 
 .tabela_body tr:hover {
     background-color: #e4e4e4
+}
+
+
+/* PARA VÍDEOS */
+
+.video-frame {
+    width: 60%;
+}
+
+.video-frame iframe{
+    width: 100%;
+    height: 450px;
+    border-radius: 30px;
 }
