@@ -95,12 +95,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 .projetos {
-    padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -178,4 +178,85 @@ main {
 
 .rede-item img:hover {
     transform: rotate(360deg);
+}
+
+/* PAGINA INICIAL - RESPONSIVO*/
+/* TABLETS */
+@media (max-width: 1000px) {
+
+    #section-forum {
+        padding: 5em 10em;
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width:426px) {
+    #header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header-nav {
+        margin: 0;
+    }
+
+    .nav-itens {
+        gap: 30px;
+    }
+
+    .nav-itens a {
+        font-size: 15px;
+    }
+
+    #section-forum {
+        padding: 2em 3em;
+    }
+
+    #section-recursos {
+        justify-content:initial
+    }
+
+    .recursos {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #section-redes {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .rede-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .luisimage img {
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 500px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .nav-itens a {
+        font-size: 10px;
+    }
+
+
+    #section-recursos {
+        display: block;
+    }
+    
+    .recursos {
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
